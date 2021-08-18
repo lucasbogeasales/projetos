@@ -1,2 +1,2 @@
-Meu primeiro projeto no GIT
+Meu primeiro projeto.
 Um agendamento clínico simples em html e css.
