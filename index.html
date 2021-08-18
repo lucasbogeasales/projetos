@@ -1,0 +1,96 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamento Clínico</title>
+    <style>
+        body {
+            background-color: rgb(6, 6, 53);
+        }
+        #area {
+            position: relative;
+            left: 32%;
+            width: 350;
+            height: 450;
+            
+        }
+        #formulario {
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+       }
+       fieldset {
+           background-color:rgb(86, 201, 166);
+           border-left-style:inset;
+           border-radius: 3%;
+
+       }
+       #agendar {
+           background-color: rgb(2, 45, 88);
+           color: floralwhite;
+           border-radius: 20%;
+           width: 3cm;
+           height: 1cm;
+           box-shadow: 5px 5px 3px black;
+       }
+       #agendar:hover {
+           background-color: rgb(57, 106, 241);
+       }
+       p {
+           font-family: Verdana, Geneva, Tahoma, sans-serif;
+       }
+       body {
+           background-image: -webkit-radial-gradient();
+       }
+       textarea {
+           width:350;
+       }
+       #titulo {
+           font-size: 30px;
+       }
+       .inputtext {
+           border: none;
+           background-color:rgb(86, 201, 166);
+           font-size: 15;
+           border-bottom: 1px solid white;
+           width: 100%;
+           color: white;
+       }
+       .labels {
+           font-size: 14px;
+       }
+       
+    </style>
+</head>
+<body>
+    <div align="center" id="area">
+       
+        <form action="paginas/login.html" id="formulario" method="GET">
+            <fieldset>
+                <p id="titulo" style="color: ivory;" align="center">Agende Sua Consulta</p>
+                <label class="labels">Nome</label><br>
+                <input class="inputtext" type="text" name="nome" value="" ><br><br>
+                <label class="labels">Email</label><br>
+                <input class="inputtext" type="email" name="email" value="" ><br><br>
+                <label>Data de Nascimento</label><br>
+                <input type="date" name="Data" value=""><br><br>
+                <label>Data da Consulta</label><br>
+                <input type="date" name="datadaconsulta" value=""><br><br>
+                <label>Especialidade</label><br>
+                <select>
+                    <option value="pediatria">Pediatria</option>
+                    <option>Ginecologia</option>
+                    <option>Dermatologia</option>
+                </select><br><br>
+            
+                <label>Horário</label><br>
+                <input type="time" name="horario" value=""><br><br>
+                <label>Observações:</label><br>
+                <textarea></textarea>
+            </fieldset>
+           <p align="center"> <input id="agendar" type="submit" name="botao" value="Agendar"></p>
+        </form>
+    </div>
+
+    
+</body>
+</html>
